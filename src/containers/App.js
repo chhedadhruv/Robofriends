@@ -35,7 +35,10 @@ onSearchChange = (event) => {
       (
         <div className='tc'>
           <h1 className='f1'>RoboFriends</h1>
+          <div>
           <SearchBox searchChange={this.onSearchChange}/>
+          <button className='pa3 ba br4 b--green bg-lightest-blue'><a style={{textDecoration:'none', color:'black'}} target="_blank" rel="noreferre noopener" href="https://docs.google.com/spreadsheets/d/1xXSenY9pIvhPOwp3M2gcQnTUvQYjvVfPfSkJGTolE8Y/edit?usp=sharing">Add Your Card</a></button>
+          </div>
           <Scroll>
             <CardList robots={filteredRobots} />
           </Scroll>
