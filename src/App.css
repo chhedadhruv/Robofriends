@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SEGA LOGO FONT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SEGA LOGO FONT"), url("SEGA.woff") format("woff");
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "SEGA LOGO FONT";
+  font-weight: 200;
+  color: #0ccac4;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-container {
+  text-align: center;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.button {
+  background-color: #0ccac4;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.button:hover {
+  background-color: #0ccac4;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.custom-card {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 300px;
+  background-color: #39bcc58e;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: #333;
+  animation: fadeIn 2s;
+}
+
+.custom-card:hover {
+  background-color: #39bcc5;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
