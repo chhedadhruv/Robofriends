@@ -5,12 +5,26 @@
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <link rel="icon" href="https://robohash.org/1?set=set3" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#667eea" />
     <meta
       name="description"
-      content="Robofriends is a simple web app that displays a list of robots and allows you to search for a specific robot by name."
+      content="Robofriends - Meet your friendly neighborhood robots! A fun and interactive way to browse through a collection of unique robot characters."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="keywords" content="robots, robofriends, robot gallery, fun, interactive, characters" />
+    <meta name="author" content="Dhruv Chheda" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Robofriends - Meet Your Robot Friends" />
+    <meta property="og:description" content="Explore a collection of unique robot characters in this fun and interactive gallery!" />
+    <meta property="og:image" content="https://robohash.org/robofriends?set=set3&size=400x400" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Robofriends - Meet Your Robot Friends" />
+    <meta name="twitter:description" content="Explore a collection of unique robot characters in this fun and interactive gallery!" />
+    
+    <link rel="apple-touch-icon" href="https://robohash.org/apple-touch-icon?set=set3&size=180x180" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -35,12 +49,6 @@
     <script>
       var Alert = ReactBootstrap.Alert;
     </script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -50,7 +58,21 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Robofriends</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Preload important resources -->
+    <link rel="preconnect" href="https://robohash.org" />
+    <link rel="preconnect" href="https://opensheet.elk.sh" />
+    
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="//robohash.org" />
+    <link rel="dns-prefetch" href="//opensheet.elk.sh" />
+    
+    <title>Robofriends - Meet Your Robot Friends</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
